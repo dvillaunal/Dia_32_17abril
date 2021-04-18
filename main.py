@@ -72,8 +72,22 @@ f('Hola', 'Soy una función', 'Definida con', '*args')
 Utilizamos *args y **kwargs como argumento cuando tenemos dudas
 sobre el número de argumentos que debemos pasar en una función
 '''
+'''
+los valores y la s llaves entran en 
+  **kwargs como diccionarios para después
+  ser evaludos
+'''
 
-def nom(**kwargs): 
+def nom(**kwargs):
+  '''
+  Esta función recibe una llave y un valor
+  en la cual realiza un ciclo for
+  para iterar los keys y values
+  de esta manera imprimirlos.
+
+  Sintaxís:
+   key = 'value'
+  '''
   for key, value in kwargs.items():
     print("%s == %s" %(key, value))
   
